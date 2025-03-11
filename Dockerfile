@@ -5,7 +5,10 @@ FROM python:latest
 WORKDIR /app  
 
 # Salin semua file ke dalam container
-COPY . .   
+COPY . .  
+
+# Install dependencies (pastikan ada `requirements.txt`)
+RUN pip install yarl  
 
 # Jalankan aplikasi (misal `script.py`)
-CMD ["python", "ddos.py"]
+CMD ["python", "script.py"]
