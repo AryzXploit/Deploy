@@ -1,0 +1,9 @@
+name: MyDeploy
+services:
+  - name: mybot
+    type: web
+    env: node
+    build:
+      dockerfile: Dockerfile
+    run: 
+      command: node ddos.js
