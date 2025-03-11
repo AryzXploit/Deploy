@@ -1,14 +1,11 @@
-# Gunakan image Node.js terbaru
-FROM node:latest  
+# Gunakan image Python terbaru
+FROM python:latest  
 
 # Set direktori kerja di dalam container
 WORKDIR /app  
 
 # Salin semua file ke dalam container
-COPY . .  
+COPY . .   
 
-# Install dependencies
-RUN npm install  
-
-# Jalankan aplikasi (sesuaikan dengan file utama, misal `ddos.js`)
-CMD ["node", "ddos.js"]
+# Jalankan aplikasi (misal `script.py`)
+CMD ["python", "ddos.py"]
